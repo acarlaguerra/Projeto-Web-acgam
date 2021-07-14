@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e1b7bf;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 110px;
+    font-weight: 60px;
+}
+
+.linha{
+    margin-bottom: 50px;
+}
+
+.titulo{
+    display: inline-flex;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 50px;
+    margin-bottom: 0;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.sobre{
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-weight: 50px;
+}
+
+.subtitulo{
+    margin-top: 50px;
+}
+.linha .coluna-50 .subtitulo p{
+    color: #5a3383;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 0.5;
+}
+
+.info{
+    background-color: #8eb9ac;
+    color:#f7f7f7;
+    border-radius: 15px;
+    max-width: 60%;
+    padding: 5px 10px;
+    margin-top: 0;
+}
+
+.sobre-titulo{
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    padding-bottom: 0;
+}
+
+.sobre-informacao{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.subtitulo a{
+    text-decoration: none;
+}
+
+i{
+    padding: 0 10px;
+}
+
+.sobre-titulo a{
+    text-decoration: none;
+}
+
+.info .sobre-icone a:hover{
+    color: #e1b7bf;
+}
+
+.info-p{
+    line-height: 1.25;
+    background-color: #c9c06f;
+    max-width: 60%;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+ul{
+    line-height: 1;
+}
+
+.fa, .far, .fab{
+    color:#f7f7f7;
+    font-size: 25px;
+    display: inline-block;
+
+}
+
+a:hover{
+    color:#2d856a;
+}
+
+.imagens img{
+    max-width: 25%;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+    height: auto;
+}
+
+.imagens a:hover{
+    transform: scale(1.0);
+}
+
+.menu{
+    background-color: #5a3383;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+}
+
+.menu a{ 
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    line-height: 10;
+}
+
+.menu li{
+    list-style-type:none;
+    padding-left: 1px;
+    padding: 10px 0 10px 1;
+    position: relative;
+    text-align: center;
+}
+
+.menu a:hover{
+    color: #e1b7bf;
+    font-weight: bold;
+}
+
+.menu ul{
+    padding: 70px 5px;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+}
+    
+.coluna-50 {
+    width: 50%;
+}
+
+.coluna-50 img{
+    border-radius: 30px;
+    max-width: 60%;
+    margin-top: 50px;
+    margin-left: 60px;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="coluna-"] {
+float: left;
+padding: 15px;
+}
+
+.linha::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.linha {
+-webkit-animation: fadeIn 2s ease-in-out;
+-moz-animation: fadeIn 2s ease-in-out;
+-o-animation: fadeIn 2s ease-in-out;
+animation: fadeIn 2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .menu a{
+     display: block;
+     line-height: 2.5;
+     text-align: center;
+     margin-top: 0;
+     padding: 0 2px 0 2px;
+    }
+
+    .menu{
+        position: fixed;
+        bottom: 30px;
+        width: 100%;
+        height: 10%;
+        margin-right: 0;
+
+    }
+    
+    .menu li{
+        list-style-type:none;
+        padding: 0 5px 0 5px;
+        position: relative;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .menu ul{
+        padding: 0 2px 0 2px;
+        display: -webkit-inline-flex;
+        text-align: center;
+        position: relative;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .subtitulo {
+        max-width: 90%;
+        height: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: justify;
+    }
+
+    .subtitulo a{
+        color: #5a3383;
+    }
+
+    .info{
+        max-width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .info-p{
+        max-width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .imagens img{
+        max-width: 50%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: block;
+        height: auto;
+    }
+}
